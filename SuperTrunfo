@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+int main() {
+    char Estado1[50] = "SaoPaulo";
+    char codigo1[5] = "A01";
+    int populacao1 = 44000000;
+    float area1 = 248219;
+    float pib1 = 2719.0;
+    int pontosTuristicos1 = 100;
+
+    char Estado2[50] = "Montevidéu";
+    char codigo2[5] = "A02";
+    int populacao2 = 1384.0;
+    float area2 = 530.0;
+    float pib2 = 27.5;
+    int pontosTuristicos2 = 80;
+
+
+    ////////
+
+
+    char codigoDigitado[5];
+    printf ("digite o codigo da carta: ");
+    scanf ("%s", codigoDigitado);
+    
+    printf("\n=== Carta %s ===\n", codigo1);
+    printf("País: %s\n", Estado1);
+    printf("População: %d\n", populacao1);
+    printf("Área: %.2f km²\n", area1);
+    printf("PIB: %.2f bilhões de reais\n", pib1);
+    printf("Pontos Turísticos: %d\n", pontosTuristicos1);
+
+
+    printf("\n=== Carta %s ===\n", codigo2);
+    printf("País: %s\n", Estado2);
+    printf("População: %d\n", populacao2);
+    printf("Área: %.2f km²\n", area2);
+    printf("PIB: %.2f trilhões de reais\n", pib2);
+    printf("Pontos Turísticos: %d\n", pontosTuristicos2);
+
+    printf("\nVocê digitou o código: %s\n", codigoDigitado);
+    printf("Visualize acima a carta correspondente.\n");
+
+
+    return 0;
+}
